@@ -1,0 +1,5 @@
+<div id="navbar">
+	<button [routerLink]="[{ outlets: { primary: 'componentOne' } }]">Home (1)</button>
+	<button [routerLink]="[{ outlets: { primary: 'componentTwo' } }]">Component 2</button>
+	<button (click)="this.routeToThree()">[Protected] Component 3</button>
+</div>
